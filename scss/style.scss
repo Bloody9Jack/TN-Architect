@@ -214,11 +214,13 @@
     &__menu {
         display: flex;
         animation: transformated 1s ease-in-out;
+
         @keyframes transformated {
-            from{
+            from {
                 transform: translateY(100rem);
             }
-            to{
+
+            to {
                 transform: translateY(0);
             }
         }
@@ -433,12 +435,14 @@
 .last {
     margin-right: 0 !important;
 }
+
 .services {
     transform: translateY(calc(50% - 79px));
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 100px;
+
     &__box {
         margin-right: 25px;
         background-color: transparent;
@@ -481,6 +485,8 @@
         transform: translateY(13vh);
         position: relative;
         z-index: -1;
+        top: 40px;
+
         @keyframes transformated {
             from {
                 transform: translateX(-200rem);
@@ -542,9 +548,9 @@
         top: -10rem;
         z-index: 9999;
         padding: 30px;
-        transform: translateY(-200rem);
+        transform: translateY(-300rem);
         transition: all .3s;
-        
+
         &--active {
             transition: all .3s ease-in;
             transform: translateY(0);
@@ -602,7 +608,7 @@
     text-indent: 45px;
 
     &__subtitle {
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 20px;
     }
 
@@ -614,6 +620,9 @@
 
     &__text {
         margin-bottom: 10px;
+        font-size: 18px;
+    }
+    &__desc{
         font-size: 16px;
     }
 
@@ -626,17 +635,21 @@
     }
 
     &__inner {
+
+
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px 30px;
         animation: transformated 1s ease-in-out;
+
         @keyframes transformated {
-            from{
+            from {
                 transform: translateY(200rem);
                 opacity: 0;
             }
-            to{
+
+            to {
                 transform: translateY(0);
                 opacity: 1;
             }
@@ -646,17 +659,82 @@
     &__box {
         cursor: pointer;
         max-width: 100%;
-        img{
+
+        img {
             max-width: 100%;
             height: auto;
-            min-width: 553px;
-            max-height: 311px;
+
         }
     }
-    &__box:nth-child(8){
+
+    &__box:nth-child(1) {
+        max-width: 526px;
+
+        img {
+            min-height: 365px;
+        }
+    }
+
+    &__box:nth-child(2) {
+        max-width: 519px;
+
+        img {
+            min-height: 365px;
+        }
+    }
+
+    &__box:nth-child(3) {
+        max-width: 525px;
+
+        img {
+            min-height: 365px;
+        }
+    }
+
+    &__box:nth-child(4) {
+        max-width: 603px;
+
+        img {
+            min-height: 339px;
+        }
+    }
+
+    &__box:nth-child(5) {
         max-width: 560px;
-        img{
-            min-height: 311px;
+
+        img {
+            min-height: 339px;
+        }
+    }
+
+    &__box:nth-child(6) {
+        max-width: 578px;
+
+        img {
+            min-height: 339px;
+        }
+    }
+
+    &__box:nth-child(7) {
+        max-width: 468px;
+        img {
+            max-height: 268px;
+        }
+    }
+
+
+    &__box:nth-child(8) {
+        max-width: 658px;
+
+        img {
+            max-height: 268px;
+        }
+    }
+
+    &__box:nth-child(9) {
+        max-width: 449px;
+        img {
+            max-height: 268px;
         }
     }
 
@@ -671,25 +749,29 @@
         font-style: normal;
         margin-top: 10px;
     }
-    &__title{
+
+    &__title {
         text-align: center;
         opacity: 0.75;
         font-size: 28px;
-        color:#5A5A5A;
+        color: #5A5A5A;
         margin-top: 75px;
         margin-bottom: 50px;
         animation: transformatedTitle 1s ease-in-out;
+
         @keyframes transformatedTitle {
-            from{
+            from {
                 transform: translateX(-150rem);
                 opacity: 0;
             }
-            to{
+
+            to {
                 opacity: 1;
                 transform: translatex(0);
             }
         }
     }
+
     &__desc {
         font-size: 22px;
         text-align: center;
