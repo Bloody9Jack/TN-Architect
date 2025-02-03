@@ -17,7 +17,9 @@
 
 
 }
-
+.mobile-menu .lang-btns{
+    display: none;
+}
 .social__menu-mobile {
     display: none;
 }
@@ -124,6 +126,8 @@
         height: 1px;
     }
 }
+
+
 
 .burger {
 
@@ -622,7 +626,8 @@
         margin-bottom: 10px;
         font-size: 18px;
     }
-    &__desc{
+
+    &__desc {
         font-size: 16px;
     }
 
@@ -717,6 +722,7 @@
 
     &__box:nth-child(7) {
         max-width: 468px;
+
         img {
             max-height: 268px;
         }
@@ -733,6 +739,7 @@
 
     &__box:nth-child(9) {
         max-width: 449px;
+
         img {
             max-height: 268px;
         }

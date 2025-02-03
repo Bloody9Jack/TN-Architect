@@ -4,32 +4,32 @@ const navMenu = document.querySelector('.menu__list');
 const navMenuEng = document.querySelectorAll('.menu__list')[1];
 const burgerActive = document.querySelector('.burger--active');
 const burgerActiveEng = document.querySelectorAll('.burger--active')[1];
-const socialMenu = document.querySelector('.social__menu-mobile');
-const socialMenuEng = document.querySelectorAll('.social__menu-mobile')[1];
+const socialMenu = document.querySelector('.lang-btns');
+const socialMenuEng = document.querySelectorAll('.lang-btns')[1];
 
 burger.addEventListener('click', () => {
     burger.classList.add('burger--active')
-    socialMenu.classList.add('social__menu-mobile--active')
+    socialMenu.classList.add('lang-btns--active')
     navMenu.classList.toggle('menu--active');
     if (navMenu.classList.contains('menu--active')) {
         document.body.style.overflow = 'hidden'
     } else {
         document.body.style.overflow = '';
         burger.classList.remove('burger--active')
-        socialMenu.classList.remove('social__menu-mobile--active')
+        socialMenu.classList.remove('lang-btns--active')
     }
 
 });
 burgerEng.addEventListener('click', () => {
     burgerEng.classList.add('burger--active')
-    socialMenuEng.classList.add('social__menu-mobile--active')
+    socialMenuEng.classList.add('lang-btns--active')
     navMenuEng.classList.toggle('menu--active');
     if (navMenuEng.classList.contains('menu--active')) {
         document.body.style.overflow = 'hidden'
     } else {
         document.body.style.overflow = '';
         burgerEng.classList.remove('burger--active')
-        socialMenuEng.classList.remove('social__menu-mobile--active')
+        socialMenuEng.classList.remove('lang-btns--active')
     }
 
 });
