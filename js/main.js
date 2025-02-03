@@ -37,7 +37,7 @@ const property = document.querySelectorAll('.main__wrapper-text');
 function deleteProperty() {
     property.forEach(item => {
         item.style.webkitTextFillColor = 'rgba(70,70,70,0)'
-        item.style.backgroundSize = '100%' 
+        item.style.backgroundSize = '100%'
     })
 }
 setTimeout(deleteProperty, 3500);
@@ -88,14 +88,20 @@ trigger.forEach((btn) => {
                 hideWrapperContent();
                 showWrapperContent(i);
 
-            }
+                window.scrollTo({
+                    behavior: 'smooth',
+                    left: 0,
+                    top: 0
+                });
 
+            }
+            infoWrapper.forEach(item => {
+                item.style.overflowY = 'scroll'
+            })
 
         })
     })
-    infoWrapper.forEach(item => {
-        item.style.overflowY = 'scroll'
-    })
+
 });
 closeBtn.forEach(item => {
     item.addEventListener('click', () => {
@@ -114,15 +120,15 @@ const services = document.querySelectorAll('.services')
 
 window.addEventListener('click', (e) => {
     services.forEach(item => {
-        if (e.target ==  item) {
+        if (e.target == item) {
             hideWrapperContent();
         }
     })
-    
-    
+
+
 });
 window.addEventListener('click', (e) => {
-    if (e.target ==  pageRu || e.target == pageEng) {
+    if (e.target == pageRu || e.target == pageEng) {
         hideWrapperContent();
     }
 });

@@ -533,17 +533,18 @@
     }
 
     &__info-wrapper {
+        // overflow-y: scroll;
         background-color: #fff;
-        position: fixed;
+        position: fixed !important;
         width: 50vw;
         height: 90vh;
         right: 0;
         top: -10rem;
         z-index: 9999;
         padding: 30px;
-        transform: translateY(-100rem);
+        transform: translateY(-200rem);
         transition: all .3s;
-
+        
         &--active {
             transition: all .3s ease-in;
             transform: translateY(0);
