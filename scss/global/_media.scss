@@ -413,7 +413,7 @@
     }
 
     .close-btn {
-        top: 35px;
+        top: 0;
     }
 }
 
@@ -439,7 +439,7 @@
     }
 
     .services {
-        padding: 0 20px;
+        padding: 0 ;
 
         &__title {
             font-size: 18px;
@@ -492,6 +492,9 @@
         height: auto;
         min-height: unset;
     }
+    .main__wrapper-text:nth-child(even){
+        font-size: 16px;
+    }
 }
 
 @media (max-width:420px) {
@@ -501,6 +504,14 @@
 
             margin: 0 auto;
         }
+    }
+    .about__descr{
+        font-size: 16px;
+    }
+    .services__title{
+        font-size: 16px;
+        margin-top: 0;
+        top: 0;
     }
 
     .header {
@@ -530,5 +541,6 @@
 @media (max-width:340px) {
     .logo{
         margin-left: 28px;
+        font-size: 20px;
     }
 }

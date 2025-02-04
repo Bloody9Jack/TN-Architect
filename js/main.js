@@ -5,14 +5,14 @@ const navMenuEng = document.querySelectorAll('.menu__list')[1];
 const burgerActive = document.querySelector('.burger--active');
 const burgerActiveEng = document.querySelectorAll('.burger--active')[1];
 const socialMenu = document.querySelector('.lang-btns');
-const socialMenuEng = document.querySelectorAll('.lang-btns')[1];
-
+const socialMenuEng = document.querySelectorAll('.lang-btns')[2];
+console.log(document.querySelectorAll('.lang-btns'))
 burger.addEventListener('click', () => {
     burger.classList.add('burger--active')
     socialMenu.classList.add('lang-btns--active')
     navMenu.classList.toggle('menu--active');
     if (navMenu.classList.contains('menu--active')) {
-        document.body.style.overflow = 'hidden'
+        // document.body.style.overflow = 'hidden'
     } else {
         document.body.style.overflow = '';
         burger.classList.remove('burger--active')
@@ -25,7 +25,7 @@ burgerEng.addEventListener('click', () => {
     socialMenuEng.classList.add('lang-btns--active')
     navMenuEng.classList.toggle('menu--active');
     if (navMenuEng.classList.contains('menu--active')) {
-        document.body.style.overflow = 'hidden'
+        // document.body.style.overflow = 'hidden'
     } else {
         document.body.style.overflow = '';
         burgerEng.classList.remove('burger--active')
@@ -42,8 +42,10 @@ function deleteProperty() {
 }
 setTimeout(deleteProperty, 3500);
 
-const ru = document.querySelectorAll('.lang-btn')[2];
+const ru = document.querySelectorAll('.lang-btn')[6];
+const ruMobile = document.querySelectorAll('.lang-btn')[4];
 const eng = document.querySelectorAll('.lang-btn')[1];
+const engMobile = document.querySelectorAll('.lang-btn')[3];
 const pageRu = document.querySelector('.ru');
 const pageEng = document.querySelector('.eng');
 ru.addEventListener('click', (e) => {
@@ -54,7 +56,23 @@ ru.addEventListener('click', (e) => {
     pageEng.classList.remove('active');
 
 })
+ruMobile.addEventListener('click', (e) => {
+    e.preventDefault();
+    pageRu.classList.add('active');
+    pageRu.classList.remove('hide');
+    pageEng.classList.add('hide');
+    pageEng.classList.remove('active');
+
+})
 eng.addEventListener('click', (e) => {
+    e.preventDefault();
+    pageEng.classList.add('active');
+    pageEng.classList.remove('hide');
+    pageRu.classList.add('hide');
+    pageRu.classList.remove('active');
+
+})
+engMobile.addEventListener('click', (e) => {
     e.preventDefault();
     pageEng.classList.add('active');
     pageEng.classList.remove('hide');

@@ -510,6 +510,9 @@
         letter-spacing: 5%;
         text-align: center;
         opacity: 0.75;
+        white-space: nowrap;
+        max-width: 223px;
+        margin: 0 auto;
     }
 }
 
@@ -546,8 +549,8 @@
         // overflow-y: scroll;
         background-color: #fff;
         position: fixed !important;
-        width: 50vw;
-        height: 90vh;
+        width: 0;
+        height: 0;
         right: 0;
         top: -10rem;
         z-index: 9999;
@@ -558,6 +561,8 @@
         &--active {
             transition: all .3s ease-in;
             transform: translateY(0);
+            width: 50vw;
+            height: 90vh;
         }
     }
 }
